@@ -1,0 +1,26 @@
+# prompt в одну строку
+add_newline = false
+
+format = "$username$hostname$directory$git_branch$character"
+
+[username]
+show_always = true
+style_user = "cyan"
+style_root = "bold red"
+
+[hostname]
+ssh_only = false
+style = "blue"
+format = "@$hostname "
+
+[directory]
+style = "yellow"
+truncate_to_repo = false
+
+[git_branch]
+style = "purple"
+format = "($branch) "
+
+[character]
+success_symbol = "[❯](green) "
+error_symbol   = "[❯](red) "
